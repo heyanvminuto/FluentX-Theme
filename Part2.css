@@ -1,0 +1,867 @@
+/* ==UserStyle==
+@name					FluentX Part 2
+@namespace				github.com/heyanvminuto
+@homepageURL				https://github.com/heyanvminuto/FluentX-Theme
+@supportURL				https://github.com/heyanvminuto/FluentX-Theme/issues
+@version				1.0.0
+@description				Part 2 of the FluentX Stylus theme for Twitter
+@author					Heyan Vieira Minuto
+@contributor            Himither
+@license				BSL-1.1
+@preprocessor				stylus
+
+@var checkbox				wide					"Make it wide"									1
+@var checkbox				hideGrok				"Hide grok stuff"								0
+@var checkbox				hidePremium				"Hide all premium annoyance"							0
+@var checkbox				hideVerified				"Hide not verified notifications"						0
+
+@var text Timeline		"━━━━━━⮞【Timeline】" '_'
+
+@var range				timeline-width				"Timeline max-width"								[900, 600, 1800, 1, ""]
+@var checkbox				timeline-header				"Non-sticky timline header"							0
+@var checkbox				timeline-hideAds			"Hide Ads"									0
+@var checkbox				timeline-hideFollow			"Hide 'Who to follow / creators for you & similar posts'"			0
+@var checkbox				timeline-todaysNews			"Hide 'Today's News' posts'"							0
+@var checkbox				timeline-outerBorders			"Hide borders around timeline"							0
+@var checkbox				timeline-postBorders			"Hide borders between posts"							0
+@var checkbox				timeline-imgBorders			"Hide borders around images"							0
+@var checkbox				timeline-quoteBorders			"Hide borders around quotes"							0
+@var checkbox				timeline-quoteImg			"Round corners for quote images"						1
+
+@var text Sidemenu		"━━━━━━⮞【Sidemenu】" '_'
+
+@var checkbox				sidemenu-hover				"Show menu only on hover/focus"							1
+@var checkbox				sidemenu-hideHome			"Hide 'Home' button" 								0
+@var checkbox				sidemenu-hideExplore			"Hide 'Explore' button" 							0
+@var checkbox				sidemenu-hideNotifications		"Hide 'Notifications' button" 							0
+@var checkbox				sidemenu-hideChat			"Hide 'Chat' button" 								0
+@var checkbox				sidemenu-hideGrok			"Hide 'Grok' button"								0
+@var checkbox				sidemenu-hidePremium			"Hide 'Premium' button"								0
+@var checkbox				sidemenu-hideBookmarks			"Hide 'Bookmarks' button" 							0
+@var checkbox				sidemenu-hideCreatorStudio		"Hide 'Creator Studio' button" 							0
+@var checkbox				sidemenu-hideProfile			"Hide 'Profile' button" 							0
+@var checkbox				sidemenu-hideMore			"Hide 'More' button" 								0
+@var checkbox				sidemenu-hidePost			"Hide 'Post' button"								0
+
+@var text Sidebar		"━━━━━━⮞【Sidebar】" '_'
+
+@var checkbox				sidebar-hover				"Show sidebar only on hover/focus"						1
+@var checkbox				sidebar-hideSearch			"Hide sidebar searchbar"							0
+@var checkbox				sidebar-hidePremium			"Hide sidebar 'Upgrade to Premium+'" 						0
+@var checkbox				sidebar-hideTrends			"Hide sidebar 'What's happening'"						0
+@var checkbox				sidebar-hideFollow			"Hide sidebar 'Who to follow'"							0
+@var checkbox				sidebar-hideLegalNotice			"Hide sidebar legal notice"							0
+
+@var text Other			"━━━━━━⮞【Other】" '_'
+
+@var checkbox				other-hoverMessages			"Show Messages only on hover/focus"						1
+@var checkbox				other-hateBorders			"Make all borders transparent"							0
+@var checkbox				other-hideBoxShadows			"Hide shadow/shine around boxes"						1
+@var checkbox				other-hideDiscoverNewLists 		"Hide 'Discover new Lists' on lists page"                                       0
+@var checkbox				other-hideScrollbars			"Hide scrollbars"								0
+
+@var text Customize		"━━━━━━⮞【Customize】" '_'
+
+@var text				customBG				"Custom background (Link to an image on X/Data URL wrapped in single quotes)"	"''"
+@var select				customBGAttachment			"Set background image behavior on scroll" {
+"Fixed*":				"fixed",
+"Scroll":				"scroll",
+"Local":				"local"
+}
+@var select				customBGPosition			"Set background image position" {
+"Center*":				"center",
+"Left":					"left",
+"Top":					"top",
+"Right":				"right",
+"Bottom":				"bottom"
+}
+@var select				customBGRepeat				"Set background image repeating behavior" {
+"No repeat*":				"no-repeat",
+"Repeat":				"repeat",
+"Repeat X":				"repeat-x",
+"Repeat Y":				"repeat-y",
+"Space":				"space",
+"Round":				"round"
+}
+@var select				customBGSize				"Set background image size" {
+"Cover*":				"cover",
+"Contain":				"contain",
+}
+@var range				menuOpacity				"Decrease background brightness"						[0.6, 0, 1, 0.01, '']
+@var select				changeLogo				"Change the logo" {
+"Default*":				"default",
+"Twitter":				"'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2aWV3Qm94PSIwIDAgMjQ4IDIwNCI+DQogIDxwYXRoIGZpbGw9IiMxZDliZjAiIGQ9Ik0yMjEuOTUgNTEuMjljLjE1IDIuMTcuMTUgNC4zNC4xNSA2LjUzIDAgNjYuNzMtNTAuOCAxNDMuNjktMTQzLjY5IDE0My42OXYtLjA0Yy0yNy40NC4wNC01NC4zMS03LjgyLTc3LjQxLTIyLjY0IDMuOTkuNDggOCAuNzIgMTIuMDIuNzMgMjIuNzQuMDIgNDQuODMtNy42MSA2Mi43Mi0yMS42Ni0yMS42MS0uNDEtNDAuNTYtMTQuNS00Ny4xOC0zNS4wNyA3LjU3IDEuNDYgMTUuMzcgMS4xNiAyMi44LS44Ny0yMy41Ni00Ljc2LTQwLjUxLTI1LjQ2LTQwLjUxLTQ5LjV2LS42NGM3LjAyIDMuOTEgMTQuODggNi4wOCAyMi45MiA2LjMyQzExLjU4IDYzLjMxIDQuNzQgMzMuNzkgMTguMTQgMTAuNzFjMjUuNjQgMzEuNTUgNjMuNDcgNTAuNzMgMTA0LjA4IDUyLjc2LTQuMDctMTcuNTQgMS40OS0zNS45MiAxNC42MS00OC4yNSAyMC4zNC0xOS4xMiA1Mi4zMy0xOC4xNCA3MS40NSAyLjE5IDExLjMxLTIuMjMgMjIuMTUtNi4zOCAzMi4wNy0xMi4yNi0zLjc3IDExLjY5LTExLjY2IDIxLjYyLTIyLjIgMjcuOTMgMTAuMDEtMS4xOCAxOS43OS0zLjg2IDI5LTcuOTUtNi43OCAxMC4xNi0xNS4zMiAxOS4wMS0yNS4yIDI2LjE2eiIvPg0KPC9zdmc+'",
+"Custom":				"customLogo"
+}
+@var text				customLogo				"Custom logo (Link to an image on X/Data URL wrapped in single quotes)" 	"''"
+@var range				resizeLogo				"Logo size" [75, 50, 150, 1, "%"]
+
+==/UserStyle== */
+@-moz-document url-prefix("https://x.com") {
+
+	/* Formerly known as Twitter ¯\_(ツ)_/¯ */
+	:root:has(body[style*="rgb(0"]) {
+		--bg: rgba(0, 0, 0, menuOpacity / 2);
+		--bgOpaque: rgb(0, 0, 0);
+		--bgForRGBA: 0, 0, 0;
+	}
+
+	:root:has(body[style*="rgb(21"]) {
+		--bg: rgba(21, 32, 43, menuOpacity / 2);
+		--bgOpaque: rgb(21, 32, 43);
+		--bgForRGBA: 21, 32, 43;
+	}
+
+	:root:has(body[style*="rgb(255"]) {
+		--bg: rgba(255, 255, 255, menuOpacity / 2);
+		--bgOpaque: rgb(255, 255, 255);
+		--bgForRGBA: 255, 255, 255;
+	}
+
+	:root {
+		--br8: 8px;
+		--br16: 16px;
+	}
+
+	if hideGrok {
+
+		a[href$="grok"],
+		div[data-testid="GrokDrawer"],
+		button[aria-label*="Grok"],
+		button:has([d^="M12.745 20.54l10"]),
+		button:has(path[d*="21h4.241L6.446"]),
+		[data-testid="tweet"] div:has(> nav),
+		main:has(path[d^="M76.717"]),
+		aside li:has([data-testid="UserAvatar-Container-grok"]),
+		a[href*="/i/imagine"] {
+			display: none;
+		}
+
+		body:has(main path[d^="M76.717"]) header::after {
+			content: "I thought you didn't want Grok?";
+			position: absolute;
+			top: 50dvh;
+			left: 50dvw;
+			color: white;
+			font-size: 69px;
+			transform: translate(-50%, -50%);
+			width: max-content;
+		}
+	}
+
+	if hidePremium {
+		[data-testid="UserName"] a[href*="premium_sign_up"] {
+			display: none;
+		}
+	}
+
+	if hideVerified {
+		div:has(> div > div > a[href="/i/premium_sign_up"]) {
+			display: none;
+		}
+	}
+
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Timeline */
+	if timeline-header {
+		[data-testid="primaryColumn"]>div>div:first-child {
+			position: unset;
+		}
+	}
+
+
+	if timeline-hideAds {
+		[data-testid="cellInnerDiv"]:has(> div > div > [data-testid="placementTracking"]),
+		[data-testid="cellInnerDiv"]:has([data-testid="inlinePrompt"]),
+		[data-testid="verified_profile_visitor_upsell"] {
+			display: none !important;
+		}
+	}
+
+	if timeline-outerBorders or other-hateBorders {
+
+		[data-testid="primaryColumn"] {
+			border-color: transparent;
+		}
+	}
+
+	if timeline-postBorders or other-hateBorders {
+		[data-testid="primaryColumn"] nav,
+		[data-testid="primaryColumn"] div:not([role="link"]):not([data-testid="card.wrapper"]):not(:has(input)),
+
+		{
+			border-bottom-color: transparent;
+			border-top-color: transparent;
+		}
+
+		[data-testid="primaryColumn"] [role="separator"],
+		[data-testid="primaryColumn"]>div>div,
+		[data-testid="cellInnerDiv"]>div>div {
+			background-color: transparent;
+		}
+	}
+
+	if timeline-imgBorders or other-hateBorders {
+		[data-testid="primaryColumn"] div[id^="id__"]>div>div>div>div {
+			border-color: transparent;
+		}
+	}
+
+	if timeline-quoteBorders or other-hateBorders {
+		[data-testid="tweet"] div[role="link"] {
+			border-color: transparent;
+		}
+	}
+
+	if timeline-quoteImg {
+		div[data-testid="tweetPhoto"] {
+			border-radius: var(--br16);
+		}
+	}
+
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Side menu */
+	/* General sidemenu-hover settings are in the ^https:\/\/x.com\/(?!settings).* section below to stop messing up the settings pages */
+	if sidemenu-hideHome {
+		nav a[href$="home"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideExplore {
+		nav a[href$="explore"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideNotifications {
+		nav a[href$="notifications"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideChat {
+		nav a[href$="chat"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideGrok or hideGrok {
+		nav a[href$="grok"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hidePremium or hidePremium {
+		nav a[data-testid="premium-hub-tab"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideBookmarks {
+		nav a[href$="bookmarks"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideCreatorStudio {
+		nav a[href$="creators/studio"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideProfile {
+		nav a[data-testid="AppTabBar_Profile_Link"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hideMore {
+		nav button[data-testid="AppTabBar_More_Menu"] {
+			display: none;
+		}
+	}
+
+	if sidemenu-hidePost {
+		header div:has( > a[data-testid="SideNav_NewTweet_Button"]) {
+			display: none;
+		}
+	}
+
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Sidebar */
+	/* General sidebar-hover settings are in the ^https:\/\/x.com\/(?!settings).* section below to stop messing up the settings pages */
+	if sidebar-hideSearch {
+		[data-testid="sidebarColumn"]:has(section)>div>div>div>div>div>div:nth-child(1) {
+			display: none;
+		}
+	}
+
+	if sidebar-hidePremium or hidePremium {
+		[data-testid="sidebarColumn"]>div>div>div>div>div>div:has(a[href*="premium_tier_switch"]) {
+			display: none;
+		}
+	}
+
+	if sidebar-hideFollow {
+		[data-testid="sidebarColumn"]>div>div>div>div>div>div>div:has(a[href*="connect_people"]) {
+			display: none;
+		}
+	}
+
+	if sidebar-hideTrends {
+		[data-testid="sidebarColumn"]:has(section) div:has( > section) {
+			display: none;
+		}
+	}
+
+	if sidebar-hideLegalNotice {
+		[data-testid="sidebarColumn"]:has(section) div:has( > nav) {
+			display: none;
+		}
+	}
+
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Customize */
+	if customBG!='' {
+		html {
+			background-attachment: customBGAttachment;
+			background-image: url(customBG);
+			background-position: customBGPosition;
+			background-repeat: customBGRepeat;
+			background-size: customBGSize;
+		}
+
+		body {
+			/*Inline change, must be !important */
+			background-color: rgba(0, 0, 0, menuOpacity) !important;
+			outline: solid rgba(0, 0, 0, menuOpacity) 99999vh;
+		}
+
+		[style$="234);"],
+		[style*="123);"],
+		[style*="165);"] {
+			/* Easy to read white text. Inline change, must be !important */
+			color: white !important;
+		}
+
+		[data-testid="primaryColumn"] div:not(div:has([role="menuitem"])):not(div[data-testid="scrubber"] div):not([role="listbox"]),
+		[data-testid="sidebarColumn"] div,
+		[data-testid="primaryColumn"],
+		[data-testid="mask"]+[role="dialog"]>div>div>div,
+		button[style*="background-color"][style*="backdrop-filter"],
+		div:has(> div > div > [data-testid="toolBar"]),
+		[data-testid="toolBar"],
+		a[href*="/i/communities/"]:not(:hover) {
+			background-color: transparent;
+		}
+
+		[data-testid="Dropdown"] {
+			background-color: "rgba(%s, 0.8)" % var(--bgForRGBA);
+		}
+
+		[data-testid="primaryColumn"]>div>div:first-child>div:first-child {
+			backdrop-filter: unset;
+		}
+
+		if (!timeline-header) {
+			[data-testid="primaryColumn"]:has([data-testid="cellInnerDiv"])>div>div:first-child {
+				backdrop-filter: blur(10px);
+			}
+		}
+
+		[data-testid="sidebarColumn"]>div>div>div>[tabindex="0"]>div>div:has(>*):not(:has([data-testid="SearchBox_Search_Input"])):not(:last-child) {
+			/* All cards / sections in the sidebar, expect for dividers and the legal notice*/
+			background-color: var(--bg);
+		}
+
+		[data-testid="sidebarColumn"] [id^="typeaheadDropdown"] {
+			/* More opaque background for the sidebar search input dropdown menu */
+			background-color: "rgba(%s, 0.8)" % var(--bgForRGBA);
+		}
+
+		form[role="search"]:not([action="#"])>div>div,
+		[data-testid="dm-search-bar"],
+		div:has(>[data-icon="icon-search-stroke"]),
+		div:has(>div>div>div>div>svg>g>[d^="M10.25 3.75c-3.59 0-6.5 2.91-6.5"]),
+		div:has(>div>div>div>div>div>div>div>textarea) {
+			background-color: var(--bg) !important;
+		}
+
+		:is([data-testid="tweet"],
+		[data-testid="notification"]):focus {
+			background-color: var(--bg);
+		}
+
+		#react-root div[role="dialog"]>div,
+		[role="menu"],
+		[data-testid="confirmationSheetDialog"] {
+			background-color: var(--bg);
+		}
+
+		article[data-testid="tweet"] div[role="group"] {
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+		}
+
+		[data-testid="cellInnerDiv"]>div,
+		[role="progressbar"]+div>div>div>div>div>div>div>div {
+			border-bottom-color: transparent;
+		}
+
+		[data-testid="ScrollSnap-prevButtonWrapper"]+[data-testid="ScrollSnap-SwipeableList"] {
+			border-bottom-left-radius: var(--br8);
+			border-bottom-right-radius: var(--br8);
+		}
+
+		[data-testid="tweet"],
+		[data-testid="notification"],
+		[data-testid="cellInnerDiv"]>div>button {
+			border-radius: var(--br8);
+		}
+
+		[data-testid="tweetPhoto"]>div>div {
+			border-top-right-radius: var(--br16);
+			border-top-left-radius: var(--br16);
+		}
+
+		[data-testid="GrokDrawer"]>div,
+		[role="dialog"] {
+			background-color: var(--bgOpaque);
+		}
+	}
+
+	if changeLogo!=default {
+		header h1[role="heading"] {
+
+			&>a {
+				background-image: url(changeLogo);
+				background-size: resizeLogo;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			&>a>div {
+				display: none;
+			}
+		}
+	}
+
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Others */
+	if other-hoverMessages {
+
+		[data-testid="chat-drawer-root"] {
+			width: 350px !important;
+			box-sizing: content-box;
+			margin-right: 0;
+			opacity: 0;
+			padding-left: 64px;
+			padding-right: 20px;
+			pointer-events: all !important;
+			transform: translateX(370px);
+			transition: all 300ms ease-in-out;
+		}
+
+		[data-testid="chat-drawer-root"]:is(:hover, :focus-within) {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		#layers>div>div:first-child {
+			transform: unset !important;
+		}
+
+		if !hideGrok {
+			@media (min-width: 500px) {
+				#layers>div>div:nth-child(2) {
+					transform: translateY(-67px) !important;
+				}
+			}
+		}
+	}
+
+
+	if other-hateBorders or customBG!='' {
+		*:not(:is([name="background-picker"], [data-testid="activeRoute"] > div), [role="radio"]>div, [style*="border-radius"]) {
+			border-color: transparent !important;
+		}
+	}
+
+	if other-hideBoxShadows or customBG!='' {
+		[data-testid="GrokDrawer"]>div,
+		[data-testid="chat-drawer-main"],
+		[role="menu"],
+		div:has(>[id^="typeaheadDropdown"]),
+		[id^="typeaheadDropdown"],
+		[data-testid="primaryColumn"]>div>div:first-child button,
+		[data-testid="HoverCard"] {
+			box-shadow: unset;
+		}
+	}
+
+	if other-hideScrollbars {
+		* {
+			scrollbar-width: none;
+		}
+	}
+}
+
+@-moz-document regexp("^https:\/\/x.com\/(?!i\/connect).*") {
+	/* Everywhere but Connect page */
+	if timeline-hideFollow {
+		[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:has(h2):has(+div[data-testid="cellInnerDiv"]>div>div>[data-testid="UserCell"]),
+		[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:has(>div>div>button[data-testid="UserCell"]),
+		[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:has(>div>div>a[href*="connect_people"]),
+		{
+			display: none;
+		}
+	}
+}
+
+@-moz-document regexp("^https:\/\/x.com\/(?!explore).*") {
+	/* Everywhere but Explore page */
+	if timeline-todaysNews {
+		[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:has(h2):has(+ [data-testid="cellInnerDiv"]>div>div>[data-testid="trend"]),
+		[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:has(>div>div>[data-testid="trend"]),
+		[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:has(>div>div>[data-testid="trend"])+[data-testid="cellInnerDiv"]:has([href*="explore"]) {
+			display: none;
+		}
+	}
+}
+
+@-moz-document regexp("^https:\/\/x.com\/(?!(settings|messages|i\/(premium|grok|chat))).*") {
+	/* Everywhere but Settings, Premium, Grok, Chat pages */
+	if wide {
+
+		html {
+			overflow-x: hidden;
+		}
+
+		header[role="banner"] {
+			position: absolute;
+			left: 0;
+		}
+
+		header[role="banner"]>div {
+			position: absolute;
+			left: 0;
+			margin-left: 0;
+		}
+
+		header[role="banner"]>div>div {
+			left: 0;
+		}
+
+		main[role="main"]>div {
+			width: 100dvw;
+		}
+
+		[data-testid="primaryColumn"] {
+			position: absolute;
+			max-width: (timeline-width px);
+			box-sizing: border-box;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+		}
+
+		if !sidemenu-hover and !sidebar-hover {
+			breakpoint1=timeline-width+414+275+139;
+			breakpoint2=timeline-width+414+275;
+
+			@media (max-width: (breakpoint1 px)) {
+				[data-testid="primaryColumn"] {
+					right: 414px;
+					margin-right: 0;
+				}
+			}
+
+			@media (max-width: (breakpoint2 px)) {
+				[data-testid="primaryColumn"] {
+					left: 275px;
+					margin-left: 0;
+					width: calc(100dvw - 414px - 275px);
+				}
+			}
+
+			@media (max-width: 1264px) {
+				[data-testid="primaryColumn"] {
+					left: 68px;
+					width: calc(100dvw - 414px - 68px);
+				}
+			}
+
+			@media (max-width: 987px) {
+				[data-testid="primaryColumn"] {
+					right: 0;
+					width: calc(100dvw - 68px);
+				}
+			}
+
+			@media (max-width: 499px) {
+				[data-testid="primaryColumn"] {
+					left: 0;
+					width: calc(100dvw);
+				}
+			}
+		}
+
+		if !sidemenu-hover and sidebar-hover {
+			breakpoint=timeline-width+275+275;
+
+			@media (max-width: (breakpoint px)) {
+				[data-testid="primaryColumn"] {
+					left: 275px;
+					margin-left: 0;
+					width: calc(100dvw - 275px);
+				}
+			}
+
+			@media (max-width: 1264px) {
+				[data-testid="primaryColumn"] {
+					left: 68px;
+					width: calc(100dvw - 68px);
+				}
+			}
+
+			@media (max-width: 499px) {
+				[data-testid="primaryColumn"] {
+					left: 0;
+					width: calc(100dvw);
+				}
+			}
+		}
+
+		if sidemenu-hover and !sidebar-hover {
+			breakpoint=timeline-width+414+414;
+			@media (max-width: (breakpoint px)) {
+				[data-testid="primaryColumn"] {
+					margin-right: 0;
+					right: 414px;
+					width: calc(100% - 414px);
+				}
+			}
+
+			@media (max-width: 987px) {
+				[data-testid="primaryColumn"] {
+					margin-right: auto;
+					right: 0;
+					width: 100dvw;
+				}
+			}
+		}
+
+		[data-testid="primaryColumn"]>div>div:last-child,
+		[data-testid="primaryColumn"]>div>div:last-child>div>div {
+			min-width: unset;
+			max-width: unset;
+			width: 100%;
+			margin: 0;
+		}
+
+		[data-testid="sidebarColumn"] {
+			position: fixed;
+			right: 0;
+			padding-left: 32px;
+			padding-right: 32px;
+			margin-right: 0;
+			width: 414px;
+			min-width: unset;
+			max-width: unset;
+		}
+
+
+
+		[data-testid="sidebarColumn"]>div {
+			/* Needed to avoid jittering. Inline change, needs to be !important */
+			min-height: 100dvh !important;
+		}
+
+		[data-testid="sidebarColumn"]>div>div {
+			/* Needed to keep content visible after scrolling down a lot. Inline change, needs to be !important */
+			margin-top: 0 !important;
+			/* Needed to avoid jittering. Inline change, needs to be !important */
+			top: 0 !important;
+			/* Needed to avoid jittering. Inline change, needs to be !important */
+			bottom: 0 !important;
+		}
+
+		[data-testid="sidebarColumn"]>div>div>div>div,
+		[data-testid="sidebarColumn"]>div>div>div>div>div {
+			height: 100dvh;
+		}
+
+		if sidebar-hover {
+			[data-testid="primaryColumn"] {
+				z-index: 0;
+			}
+
+			[data-testid="sidebarColumn"]:hover {
+				width: 414px;
+			}
+		}
+
+		@media screen and (max-width: 1264px) {
+			header[role="banner"]>div>div>div {
+				width: 68px;
+			}
+
+			[data-testid="sidebarColumn"]>div>div>div>div>div>div>div:has([role="search"]) {
+				width: 350px;
+			}
+		}
+	}
+
+	if sidemenu-hover {
+		header[role="banner"]>div>div {
+			opacity: 0;
+			transition: all 300ms ease-in-out;
+		}
+
+		header[role="banner"]>div>div:is(:hover, :focus-within) {
+			opacity: 1;
+		}
+
+		if wide {
+			header[role="banner"]>div>div {
+				left: calc(-275px + 32px);
+			}
+
+			header[role="banner"]>div>div:is(:hover, :focus-within) {
+				left: 0px;
+			}
+
+			@media screen and (max-width: 1264px) {
+				header[role="banner"]>div>div {
+					left: calc(-88px + 32px);
+				}
+
+				header[role="banner"]>div>div:is(:hover, :focus-within) {
+					left: 0;
+				}
+			}
+		}
+	}
+
+	if sidemenu-hover or customBG!='' {
+		header[role="banner"]>div>div:hover,
+		header[role="banner"]>div>div:focus-within {
+			backdrop-filter: blur(10px);
+			background-color: var(--bg);
+		}
+	}
+
+	if sidebar-hover {
+		[data-testid="sidebarColumn"] {
+			height: 100dvh;
+			opacity: 0;
+			transition: all 300ms ease-in-out;
+		}
+
+		[data-testid="sidebarColumn"]:hover,
+		[data-testid="sidebarColumn"]:has(:focus) {
+			opacity: 1;
+		}
+
+		if wide {
+			[data-testid="sidebarColumn"] {
+				transform: translateX(calc(100% - 32px));
+			}
+
+			[data-testid="sidebarColumn"]:is(:hover, :focus-within) {
+				transform: translateX(0);
+			}
+		}
+	}
+
+	if sidebar-hover or customBG!='' {
+		[data-testid="sidebarColumn"]:hover,
+		[data-testid="sidebarColumn"]:focus-within {
+			backdrop-filter: blur(10px);
+			background-color: var(--bg);
+		}
+	}
+}
+
+@-moz-document url-prefix("https://x.com/i/chat") {
+	/* Chat page */
+	if customBG!='' {
+		[data-testid="dm-inbox-tabs-container"]>div[class*="to-transparent"] {
+			opacity: 0 !important;
+		}
+
+		[class*="text-gray-700"],
+		[data-testid="dm-inbox-tab-requests"] {
+			/*  Inline change, Must be !important */
+			color: white !important;
+		}
+	}
+}
+
+@-moz-document url-prefix("https://x.com/i/grok") {
+	/* Grok page */
+	if customBG!='' {
+		button:has(>div>span>svg):not(:hover),
+		button:has(button)>div {
+			/* Inline change, Must be !important */
+			background-color: var(--bg) !important;
+		}
+	}
+}
+
+@-moz-document regexp("^https:\/\/x.com\/.*\/lists(?!\/suggested).*") {
+	/* Lists page */
+	if other-hideDiscoverNewLists {
+		[data-testid="cellInnerDiv"]:has(+ [data-testid="cellInnerDiv"] [d="M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z"]),
+		[data-testid="cellInnerDiv"]:has([d="M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z"]),
+		[data-testid="cellInnerDiv"]:has([href="/i/lists/suggested"]) {
+			display: none;
+		}
+	}
+}
+
+@-moz-document url-prefix("https://x.com/messages/requests") {
+	/* Messages page */
+	if customBG!='' {
+		section[role="region"]>div,
+		section[role="region"]>div>div>div:first-child>div>div>div,
+		section[role="region"]>div>div>div:nth-child(2) {
+			background-color: transparent;
+		}
+	}
+}
+
+@-moz-document url-prefix("https://x.com/settings") {
+
+	/* Settings page*/
+	if customBG!='' {
+		svg {
+			color: white !important;
+		}
+
+		div {
+			opacity: 1 !important;
+		}
+
+		:is([role="banner"]>div>div, section) {
+			background-color: var(--bg);
+		}
+
+		section div:not(:has(~ input)) {
+			background-color: transparent !important;
+		}
+
+		section>div>div>div>div {
+			backdrop-filter: none !important;
+		}
+
+		form>div>div>div {
+			border-color: gray !important;
+		}
+
+		[data-testid="activeRoute"]:has([aria-selected="true"]),
+		[data-testid="activeRoute"] a:hover,
+		[data-testid="activeRoute"] a:focus,
+		main a:hover,
+		main a:focus {
+			background-color: var(--bg) !important;
+		}
+	}
+}
