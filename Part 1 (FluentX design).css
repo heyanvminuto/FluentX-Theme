@@ -1,0 +1,1056 @@
+/* ==UserStyle==
+@name           Fluent X Design
+@namespace      https://userstyles.world/user/vieiraminutoheyan
+@version        1.0.0
+@description    Windows 11 Fluent / Mica design aesthetic implementation for X (formerly Twitter) — comprehensive user interface enhancement system comprising: adaptive layout engine, context-aware sidebar behaviour, dynamic background rendering system, custom colour management framework, icon asset library, typography system, and supplementary user experience optimizations
+@author         Heyan Vieira Minuto
+@contributor    Himither — Original "Xcellent" foundational architecture, layout mechanics, and interface behaviour logic
+@contributor    birb-naise — Original "Customizable X" feature modules, configuration system, and visual style assets
+@license        BSL-1.1
+@created        2026-11-11
+@status         Final Release — Authoritative Version
+
+================================================================================
+                              DOCUMENT OVERVIEW
+================================================================================
+
+Document Identifier:  LICENSE-FXD-2026-11-11-v1.0
+Work Designation:     Fluent X Design
+License Classification: Business Source License 1.1
+Effective Date:       11 November 2026, 00:00 UTC
+Jurisdiction:         Republic of Italy — Civil Code, Articles 2575 et seq.
+Governing Law:        Italian Law; International Copyright Conventions
+                      (Berne Convention, Paris Act 1971);
+                      WIPO Copyright Treaty (1996);
+                      EU Directive 2001/29/EC;
+                      EU Directive 2019/790/EU
+
+================================================================================
+                           CONTACT INFORMATION
+================================================================================
+
+For all matters pertaining to this Work, including but not limited to:
+licensing inquiries, commercial usage authorization, derivative distribution
+permission, permissions beyond the Additional Use Grant, correspondence
+regarding license compliance, and all other official communications:
+
+  PRIMARY CORRESPONDENCE CHANNELS:
+
+    1. TELECOMMUNICATIONS — VOICE, SMS, RCS AND WHATSAPP
+       Number:      +39 379 225 0408
+       Services:    Voice calls, Short Message Service (SMS),
+                    Rich Communication Services (RCS),
+                    WhatsApp text and multimedia messaging
+       WhatsApp:    https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v
+       Availability: Standard Central European Time (CET/CEST) business hours
+
+    2. TELEGRAM INSTANT MESSAGING
+       Username:    @heyanvminuto
+       URL:         https://t.me/heyanvminuto
+       Protocol:    Telegram Messenger Platform
+
+    3. ELECTRONIC MAIL — PRIMARY
+       Address:     heyanvnm@outlook.com
+       Protocol:    SMTP / MIME
+       Encryption:  TLS recommended for all transmissions
+
+    4. ELECTRONIC MAIL — SECONDARY
+       Address:     vieiraminutoheyan@gmail.com
+       Protocol:    SMTP / MIME
+       Encryption:  TLS recommended for all transmissions
+
+    5. X (FORMERLY TWITTER) — DIRECT MESSAGING
+       Handle:      @heyanvminuto
+       Platform:     X Corp. Direct Messaging System
+
+  CORRESPONDENCE GUIDELINES:
+    • All written requests for commercial use or derivative distribution
+      permission must include: full legal name of requester, organizational
+      affiliation (if applicable), intended use case, scope of deployment,
+      estimated user volume, and duration of intended usage.
+    • Authorization granted via one channel is valid across all channels
+      provided the written record is preserved.
+    • Response timeframes: Inquiries will be acknowledged within 14 calendar
+      days; substantive responses provided within 30 calendar days where
+      reasonably possible.
+
+================================================================================
+                    BUSINESS SOURCE LICENSE VERSION 1.1
+                    Official License Text — Reference Copy
+                    Source: https://mariadb.com/bsl11/
+                    Copyright © 2023 MariaDB plc
+================================================================================
+
+DEFINITIONS
+
+  "License"          Means this Business Source License 1.1 document,
+                     including all Appendices, Parameters, and Additional
+                     Use Grant set forth herein.
+
+  "Licensed Work"    Means the work identified as Fluent X Design, including
+                     all original code files, style definitions, configuration
+                     interfaces, documentation, visual assets, and design
+                     specifications made available under this License, together
+                     with all partial copies, excerpts, and derivative
+                     adaptations thereof.
+
+  "Effective Date"   Means the date first set forth above as the effective
+                     commencement of this License: 2026-11-11.
+
+  "Change Date"      Means the specific future date upon which certain
+                     restrictions under this License shall expire and the
+                     Work shall become available under the Change License
+                     identified herein: 2194-01-01.
+
+  "Change License"   Means the license terms that shall apply to the
+                     Licensed Work on and after the Change Date:
+                     MIT License — https://opensource.org/licenses/MIT
+
+  "Licensor"         Means Heyan Vieira Minuto, the holder of the
+                     copyright and other proprietary rights in the
+                     Licensed Work.
+
+  "You" or "Your"    Means the individual person or legal entity
+                     exercising permissions granted by this License.
+
+  "Use" or "Using"   Means to access, download, install, copy, store,
+                     execute, display, run, modify, adapt, translate,
+                     redistribute, or otherwise exploit the Work in any
+                     manner whatsoever.
+
+  "Derivative Work"  Means any modification, adaptation, enhancement, or
+                     derivative of the Licensed Work, whether in whole or
+                     in part, including any work that incorporates all or
+                     a portion of the Licensed Work, regardless of the
+                     extent of modification made.
+
+  "Commercial Use"   Means any use that generates revenue, facilitates
+                     business operations, provides service to third parties
+                     in exchange for consideration, or is undertaken for
+                     purposes of commercial advantage or monetary
+                     compensation of any kind whatsoever.
+
+LICENSE PARAMETERS
+
+  A. Licensed Work:        Fluent X Design
+  B. Effective Date:       2026-11-11
+  C. Change Date:          2194-01-01
+  D. Change License:       MIT License
+  E. Licensor Contact:     Heyan Vieira Minuto — contact details above
+
+ADDITIONAL USE GRANT
+
+  Subject to the terms, conditions, and limitations set forth in this
+  License, the Licensor hereby grants to You a limited, non-exclusive,
+  non-transferable, revocable permission to exercise the following
+  rights:
+
+  1. PERSONAL NON-COMMERCIAL USE
+     You may view, download, install, and execute copies of the
+     Licensed Work solely for Your own personal, private, and
+     non-commercial enjoyment. No fee, subscription, or consideration
+     of any kind may be charged or accepted in connection with
+     such usage.
+
+  2. PERSONAL MODIFICATION RIGHTS
+     You may create modifications and adaptations of the Licensed
+     Work solely for Your own personal, non-commercial use and
+     benefit. Such modifications may not be distributed, shared,
+     published, displayed publicly, or used for any purpose beyond
+     Your individual private usage.
+
+  3. UNMODIFIED REDISTRIBUTION
+     You may reproduce and distribute verbatim, complete, and
+     unaltered copies of the Licensed Work to third parties,
+     provided that:
+       a. This entire License document is reproduced in full,
+          without omission or alteration;
+       b. No compensation, donation request, or revenue generation
+          mechanism is associated with the distribution;
+       c. The source of the Work and attribution information
+          remain clearly visible and intact;
+       d. Recipients are notified of and agree to the terms
+          of this License.
+
+  4. RESERVATION OF ALL OTHER RIGHTS
+     All rights not explicitly and expressly granted in this
+     Additional Use Grant are strictly reserved to the Licensor.
+     No implication, estoppel, or silent permission shall be
+     construed from the mere publication or availability of
+     the Work. Specifically, and without limiting the generality
+     of the foregoing:
+       a. You MAY NOT distribute modified or derivative works
+          publicly or to third parties without prior written
+          authorization from the Licensor;
+       b. You MAY NOT use the Work or any derivative in or for
+          any commercial context, business activity, or
+          service offering without prior written commercial
+          license from the Licensor;
+       c. You MAY NOT sub-license, sell, rent, lease, or
+          transfer the Work or Your rights hereunder to
+          any third party;
+       d. You MAY NOT remove, alter, or obscure any copyright
+          notice, attribution, watermark, or license identifier
+          contained within the Work.
+
+LICENSE TERMS AND CONDITIONS
+
+1. GRANT OF RIGHTS AND OWNERSHIP
+
+  Subject to the timely and full observance of all terms and conditions
+  contained herein, the Licensor grants to You the limited permissions
+  explicitly described in the Additional Use Grant. All intellectual
+  property rights, including copyright, moral rights, database rights,
+  and all other proprietary interests in and to the Licensed Work,
+  remain and shall remain the exclusive property of the Licensor and
+  respective third-party contributors where applicable. Nothing in this
+  License constitutes a transfer of title or ownership rights.
+
+2. CHANGE OF LICENSE TERMS — FUTURE CONVERSION
+
+  Effective upon the earlier of:
+    (a) The Change Date specified herein: 2194-01-01; OR
+    (b) The fourth anniversary of the first public release of this
+        specific version of the Licensed Work by the Licensor;
+
+  then, and only then, the restrictions contained in this License
+  shall terminate, and the Licensed Work shall thereafter be made
+  available under the terms of the Change License identified above.
+  Upon such conversion, the full text of the Change License shall
+  supersede this document with respect to future usage, but shall
+  not retroactively validate any infringement occurring prior to
+  the Change Date. No representation or warranty is made that
+  conversion will occur at a specific time or that the Work will
+  remain available in its current form until that date.
+
+3. COMPLIANCE, ENFORCEMENT, AND COMMERCIAL LICENSING
+
+  Any use of the Licensed Work outside the scope of the Additional
+  Use Grant, or in violation of any term herein, constitutes a
+  material breach of this License and terminates all permissions
+  granted hereunder. In the event of such breach, You must:
+    (a) Immediately cease all use and destroy all copies in
+        Your possession or control; AND
+    (b) Where applicable, obtain a valid commercial license
+        directly from the Licensor through contact channels
+        provided above; AND
+    (c) Remain liable for all usage prior to cessation and
+        for any unauthorized distribution that has occurred.
+
+  Commercial licenses, permissions for derivative distribution,
+  and waivers of usage restrictions may be granted by the
+  Licensor in writing, in its sole discretion, and under such
+  terms and compensation arrangements as may be mutually
+  agreed in writing.
+
+4. DISTRIBUTION AND COPY REQUIREMENTS
+
+  Every copy of the Licensed Work, in whole or in part, including
+  verbatim copies and excerpts, must reproduce this License document
+  in its entirety, without modification, deletion, or alteration.
+  This requirement applies equally to distribution in source form,
+  embedded form, aggregated collections, and documentation. If You
+  receive the Work from a third party, the terms of this License
+  apply to Your possession and use regardless of whether the
+  third party complied with distribution requirements.
+
+5. DERIVATIVE WORKS AND CONTRIBUTIONS
+
+  You may create derivative adaptations for Your own personal
+  non-commercial use as permitted in Section 2 of the Additional
+  Use Grant. You are not required to share or publish such
+  adaptations. Any voluntary contribution, feedback, suggestion,
+  or improvement communicated to the Licensor shall be deemed
+  non-confidential and non-proprietary, and the Licensor shall
+  have the perpetual, worldwide, royalty-free right to use,
+  incorporate, and exploit such contributions in the Work without
+  restriction or obligation.
+
+6. TRADEMARKS AND BRANDING
+
+  This License does not grant permission to use the trade names,
+  trademarks, service marks, product names, or designations of
+  the Licensor, even if they appear in the Work, except as
+  reasonably necessary to describe the origin and authorship
+  of the Work in unmodified redistributions.
+
+7. NO WARRANTY AND LIMITATION OF LIABILITY
+
+  THE LICENSED WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+  AND NONINFRINGEMENT. IN NO EVENT SHALL THE LICENSOR BE LIABLE
+  FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+  CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE
+  WORK. ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+  WORK IS WITH YOU. SHOULD THE WORK PROVE DEFECTIVE, YOU ASSUME
+  THE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+8. TERMINATION AND SURVIVAL
+
+  This License shall automatically terminate if You violate any
+  material term contained herein. Upon termination, You must
+  cease all use and destroy all copies of the Work in Your
+  possession. Sections 3 through 8 inclusive shall survive
+  termination of this License indefinitely, as shall all
+  provisions protecting the Licensor's intellectual property
+  rights and limitations of liability.
+
+9. INTERPRETATION AND SEVERABILITY
+
+  This License shall be interpreted under the laws of the
+  Republic of Italy. If any provision herein is found to be
+  unenforceable or invalid, such provision shall be limited to
+  the minimum extent necessary to be valid, and the remaining
+  provisions shall remain in full legal force and effect. The
+  headings used herein are for organizational convenience
+  only and shall not be used to construe the intent of
+  any provision.
+
+================================================================================
+                     THIRD-PARTY COMPONENT NOTICES
+================================================================================
+
+This Work incorporates components from external projects, each of which is
+owned by their respective authors and made available under their original
+licensing terms. These third-party components remain the property of their
+respective copyright holders and are not subject to the Business Source
+License 1.1 restrictions set forth above. Your use of these components
+is governed exclusively by their respective license terms reproduced below.
+
+------------------------------------------------------------------------------
+COMPONENT 1: Xcellent
+------------------------------------------------------------------------------
+
+  Original Work:   Xcellent
+  Author:          Himither
+  Repository:      https://github.com/Himither/Xcellent
+  License:         MIT License
+  Date Acquired:   2026-11-11
+
+  MIT License
+
+  Copyright (c) 2024 Himither
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+------------------------------------------------------------------------------
+COMPONENT 2: Customizable X
+------------------------------------------------------------------------------
+
+  Original Work:   Customizable X
+  Author:          birb-naise
+  Source Location: Included in this aggregation
+  License:         MIT License
+  Date Acquired:   2026-11-11
+
+  MIT License
+
+  Copyright (c) 2026 birb-naise
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+------------------------------------------------------------------------------
+SEVERABILITY AND INTERPRETATION
+------------------------------------------------------------------------------
+
+  In the event that any term, condition, or restriction contained in the
+  Business Source License 1.1 portion of this document is found to conflict
+  with the license terms applicable to these third-party components, the
+  terms of the respective MIT License shall prevail solely with respect to
+  the specific third-party component to which they apply. No provision of
+  the BSL-1.1 shall be construed to restrict usage of the MIT-licensed
+  components beyond what their original authors have expressly permitted.
+
+================================================================================
+                         END OF LICENSE & DISCLAIMER
+================================================================================
+
+By using, copying, modifying, or reading this Work, You acknowledge that You
+have read, understood, and agree to be bound by the terms and conditions set
+forth in this document. If You do not agree to these terms, You must cease
+all use and remove all copies of this Work from Your possession immediately.
+
+This document, including all appendices, contact information, and license
+text, constitutes the complete and legally binding agreement between the
+parties concerning the Work herein and supersedes all prior communications,
+understandings, or agreements, whether oral or written.
+
+IN WITNESS WHEREOF, the Licensor has caused this License document to be
+prepared and published as of the Effective Date first written above.
+
+______________________________________________________________________________
+                  THE ACTUAL WORK BEGINS BELOW THIS LINE
+______________________________________________________________________________
+
+
+/* ==UserStyle==
+@name           Fluent X Design — Customizable ✧･ﾟ☆
+@namespace      https://userstyles.world/user/vieiraminutoheyan
+@version        20261010.4
+@description    Simple, customizable Fluent design theme for X/Twitter — fully transparent Mica background by default
+@author         birb-naise + Heyan Vieira Minuto
+@advanced dropdown notice "Custom images need to be uploaded to Twitter first!" {
+    n-blank "←" <<<EOT   EOT;
+}
+@advanced dropdown bg "Background" {
+    fluent "Fluent / Mica*" <<<EOT https://pbs.twimg.com/media/HWccf2XWYAEvz6a?format=jpg&name=900x900 EOT;
+    mafuyu "Mafuyu" <<<EOT https://pbs.twimg.com/media/GPBgI0OWwAAdY9T?format=jpg&name=large EOT;
+	emu "Emu" <<<EOT https://pbs.twimg.com/media/GPBgTTnXYAAbKqs?format=jpg&name=large EOT;
+	ena "Ena" <<<EOT https://pbs.twimg.com/media/GNUaw_TXoAAb2DG?format=jpg&name=large EOT;
+ 	a "Starry" <<<EOT https://pbs.twimg.com/media/DljPXShXcAA_30D?format=jpg&name=4096x4096 EOT;
+	bg-custom-dropdown "Custom" <<<EOT /*[[bg-custom]]*\/ EOT;
+}
+@advanced 	text 		bg-custom 	"Custom Background" 	"https://pbs.twimg.com/media/example"
+@advanced	color		bg-overlay	"Background Overlay"	#00000000
+@advanced 	dropdown	bg-blur 	"Background Blur" {
+	blur-off	"OFF*"			<<<EOT EOT;
+	blur-2		"2px"			<<<EOT backdrop-filter: blur(2px); EOT;
+	blur-5		"5px"			<<<EOT backdrop-filter: blur(5px); EOT;
+	blur-10		"10px"			<<<EOT backdrop-filter: blur(10px); EOT;
+	blur-15		"15px"			<<<EOT backdrop-filter: blur(15px); EOT;
+	blur-20		"20px"			<<<EOT backdrop-filter: blur(20px); EOT;
+	blur-40		"40px"			<<<EOT backdrop-filter: blur(40px); EOT;
+}
+@advanced	color		popup-color	"Pop-up Color" 			#ffffff
+@advanced	color 		theme-color "Theme Color" 			#2d7d9a
+@advanced dropdown icon "Icon" {
+  i-x "X*" <<<EOT EOT;
+  i-twt-white "Twitter (White)" <<<EOT
+	a[aria-label="X"] > * > * {
+		opacity: 0;
+	}
+	a[aria-label="X"] *,
+	[aria-label="Loading…"] > * {
+		background: url("https://pbs.twimg.com/media/F11tdlXaMAAeY6R?format=png&name=medium") center no-repeat;
+	}
+ 	EOT;
+  i-twt-blue "Twitter (Blue)" <<<EOT
+	a[aria-label="X"] > * > * {
+		opacity: 0;
+	}
+	a[aria-label="X"] *,
+	[aria-label="Loading…"] > * {
+		background: url("https://pbs.twimg.com/media/F11tdlqaIAIc9oZ?format=png&name=medium") center no-repeat;
+	}
+ 	EOT;
+  i-twt-pink "Twitter (Pink)" <<<EOT
+	a[aria-label="X"] > * > * {
+		opacity: 0;
+	}
+	a[aria-label="X"] *,
+	[aria-label="Loading…"] > * {
+		background: url("https://pbs.twimg.com/media/F11tdloaEAAPV6I?format=png&name=medium") center no-repeat;
+	}
+ 	EOT;
+  i-twt-custom "Custom" <<<EOT
+	a[aria-label="X"] > * > * {
+		opacity: 0;
+	}
+	a[aria-label="X"] *,
+	[aria-label="Loading…"] > * {
+		background: url(/*[[icon-custom]]*\/) center no-repeat;
+	}
+ 	EOT;
+}
+@advanced text icon-custom "Custom Icon" "https://pbs.twimg.com/media/example"
+@advanced dropdown font "Font" {
+  segoeui "Segoe UI*" <<<EOT Segoe UI EOT;
+  twitterchirp "Twitter Chirp" <<<EOT TwitterChirp EOT;
+  arialblack "Arial Black" <<<EOT Arial Black EOT;
+  Consolas "Consolas" <<<EOT Consolas EOT;
+  cambria "Cambria" <<<EOT Cambria EOT;
+  candara "Candara" <<<EOT Candara EOT;
+  centurygothic "Century Gothic" <<<EOT Century Gothic EOT;
+  couriernew "Courier New" <<<EOT Courier New EOT;
+  verdana "Verdana" <<<EOT Verdana EOT;
+  arial "Arial" <<<EOT Arial EOT;
+  comicsansms "Comic Sans MS" <<<EOT Comic Sans MS EOT;
+}
+@advanced dropdown show-premium "Show Premium + Ads" {
+  show-pr "Show*" <<<EOT 
+	aside[aria-label="Subscribe to Premium"],
+	aside[aria-label="Stay organized with Bookmark Folders"],
+	aside[aria-label="Subscribe to Premium to write your own longer posts"],
+	aside[aria-label="Expiring soon!"],
+	div[data-testid="super-upsell-UpsellCardRenderProperties"],
+	a[aria-label="Premium"],
+	a[aria-label="Verified Orgs"],
+	a[aria-label="Business"],
+	EOT;
+  hide-pr "Hide" <<<EOT EOT;
+}
+@advanced dropdown show-grok "Show Grok" {
+  hide-gr "Hide*" <<<EOT 
+	a[aria-label="Grok"],
+	div[data-testid="GrokDrawer"],
+	button[aria-label="Grok actions"],
+	EOT;
+  show-gr "Show" <<<EOT EOT;
+}
+@advanced dropdown show-explore "Show Explore" {
+  show-ex "Show*" <<<EOT EOT;
+  hide-ex "Hide" <<<EOT 
+	a[aria-label="Search and explore"],
+	EOT;
+}
+@advanced dropdown show-communities "Show Communities" {
+  show-co "Show*" <<<EOT EOT;
+  hide-co "Hide" <<<EOT 
+	a[aria-label="Communities"],
+	EOT;
+}
+@advanced dropdown show-lists "Show Lists" {
+  show-li "Show*" <<<EOT EOT;
+  hide-li "Hide" <<<EOT 
+	a[aria-label="Lists"],
+	EOT;
+}
+@advanced dropdown show-calls "Show Calls" {
+  show-ca "Show*" <<<EOT EOT;
+  hide-ca "Hide" <<<EOT 
+	a[aria-label="Calls"],
+	EOT;
+}
+@advanced dropdown show-creatorstudio "Show Creator Studio" {
+  show-cr "Show*" <<<EOT EOT;
+  hide-cr "Hide" <<<EOT 
+	a[aria-label="Creator Studio"],
+	EOT;
+}
+==/UserStyle== */
+@-moz-document domain("x.com"), domain("twitter.com") {
+	
+	/*////////////// BACKGROUND //////////////*/
+	:root {
+		background: url('/*[[bg]]*/') fixed center;
+		background-size: cover;
+		--theme-color: /*[[theme-color]]*/;
+		--theme-popup: /*[[popup-color]]*/;
+		--background: /*[[bg-overlay]]*/ !important;
+	}
+	body {
+		background-color:  /*[[bg-overlay]]*/ !important;
+		height: max-content;
+		/*[[bg-blur]]*/
+	}
+	
+	/*////////////// POP-UP COLORS — SOLID WHITE //////////////*/
+	select,
+	div[data-testid="Dropdown"],
+	div[data-testid="HoverCard"],
+	div[role="dialog"],
+	div[data-testid="sheetDialog"],
+	div[data-testid="confirmationSheetDialog"],
+	.bg-modal-background,
+	div[role="listbox"],
+	div[role="radio"] {
+		background: var(--theme-popup) !important;
+		color: #1d1d1f !important;
+	}
+	
+	/*////////////// THEME COLOR //////////////*/
+	[aria-label="Post"],
+	::selection,
+	div[role="status"] > button,
+	.r-m5arl1,
+	.r-hdaws3,
+	div[data-testid="userAvatars"] div[style^="background-color: rgb"],
+	.r-615f2u {
+		background: var(--theme-color) !important;
+	}
+	
+	div[data-testid="sidebarColumn"] [role="link"] > *,
+	a[data-testid="UserUrl"],
+	button > span,
+	a[role="link"]:not(.r-1d09ksm),
+	svg[aria-label="Verified account"] {
+		color: var(--theme-color) !important;
+	}
+	
+	.r-9cip40 {
+		box-shadow: none;
+		border-color: var(--theme-color);
+	}
+	
+	
+	/*////////////// WEBSITE ICON //////////////*/
+	/*[[icon]]*/
+	[aria-label="Loading…"] {
+		opacity: 0;
+	}
+	a[aria-label="X"] *,
+	[aria-label="Loading…"] > * {
+		background-size: 70%;
+	}
+	
+	
+	/*////////////// FONT //////////////*/
+	.css-146c3p1 {
+		font-family: "/*[[font]]*/";
+	}
+	
+	
+	/*////////////// MISC //////////////*/
+	.r-j5o65s,
+	.r-kemksi,
+	.r-jxzhtn,
+	.css-175oi2r {
+		border: none !important;
+	}
+	[role="status"] > * {
+		box-shadow: var(--theme-color);
+	}
+	.r-kemksi,
+	.r-5zmot,
+	.r-14lw9ot,
+	.r-6026j {
+		background: transparent;
+	}
+	
+	/*////////////// HIDE ELEMENTS //////////////*/
+	/*[[show-premium]]*/
+	/*[[show-grok]]*/
+	/*[[show-explore]]*/
+	/*[[show-communities]]*/
+	/*[[show-lists]]*/
+	/*[[show-calls]]*/
+	/*[[show-creatorstudio]]*/
+	nav[aria-label="Footer"],
+	.r-109y4c4 {
+		display: none;
+	}
+}
+
+/* ==UserStyle==
+@name					Xcellent
+@namespace				github.com/Himither
+@homepageURL				https://github.com/Himither/Xcellent
+@supportURL				https://github.com/Himither/Xcellent/issues
+@version				1.33.0
+@author					Himither + Heyan V. Minuto
+@license				MIT
+@preprocessor				stylus
+
+/* ========== YOUR DEFAULTS APPLIED HERE ========== */
+@var checkbox				wide					"Make it wide"									1
+@var checkbox				hideGrok				"Hide grok stuff"								1
+@var checkbox				hidePremium				"Hide all premium annoyance"							1
+@var checkbox				hideVerified				"Hide not verified notifications"						1
+
+@var text Timeline		"━━━━━━⮞【Timeline】" '_'
+@var range				timeline-width				"Timeline max-width"								[900, 600, 1800, 1, ""]
+@var checkbox				timeline-header				"Non-sticky timeline header"							0
+@var checkbox				timeline-hideAds			"Hide Ads"									1
+@var checkbox				timeline-hideFollow			"Hide 'Who to follow / creators for you & similar posts'"			0
+@var checkbox				timeline-todaysNews			"Hide 'Today's News' posts'"							0
+@var checkbox				timeline-outerBorders			"Hide borders around timeline"							1
+@var checkbox				timeline-postBorders			"Hide borders between posts"							1
+@var checkbox				timeline-imgBorders			"Hide borders around images"							1
+@var checkbox				timeline-quoteBorders			"Hide borders around quotes"							1
+@var checkbox				timeline-quoteImg			"Round corners for quote images"						1
+
+@var text Sidemenu		"━━━━━━⮞【Sidemenu】" '_'
+@var checkbox				sidemenu-hover				"Show menu only on hover/focus"							1
+@var checkbox				sidemenu-hideHome			"Hide 'Home' button" 								0
+@var checkbox				sidemenu-hideExplore			"Hide 'Explore' button" 							0
+@var checkbox				sidemenu-hideNotifications		"Hide 'Notifications' button" 							0
+@var checkbox				sidemenu-hideChat			"Hide 'Chat' button" 								0
+@var checkbox				sidemenu-hideGrok			"Hide 'Grok' button"								1
+@var checkbox				sidemenu-hidePremium			"Hide 'Premium' button"								1
+@var checkbox				sidemenu-hideBookmarks			"Hide 'Bookmarks' button" 							0
+@var checkbox				sidemenu-hideCreatorStudio		"Hide 'Creator Studio' button" 							0
+@var checkbox				sidemenu-hideProfile			"Hide 'Profile' button" 							0
+@var checkbox				sidemenu-hideMore			"Hide 'More' button" 								0
+@var checkbox				sidemenu-hidePost			"Hide 'Post' button"								1
+
+@var text Sidebar		"━━━━━━⮞【Sidebar】" '_'
+@var checkbox				sidebar-hover				"Show sidebar only on hover/focus"						1
+@var checkbox				sidebar-hideSearch			"Hide sidebar searchbar"							0
+@var checkbox				sidebar-hidePremium			"Hide sidebar 'Upgrade to Premium+'" 						1
+@var checkbox				sidebar-hideTrends			"Hide sidebar 'What's happening'"						1
+@var checkbox				sidebar-hideFollow			"Hide sidebar 'Who to follow'"							0
+@var checkbox				sidebar-hideLegalNotice			"Hide sidebar legal notice"							0
+
+@var text Other			"━━━━━━⮞【Other】" '_'
+@var checkbox				other-hoverMessages			"Show Messages only on hover/focus"						1
+@var checkbox				other-hateBorders			"Make all borders transparent"							1
+@var checkbox				other-hideBoxShadows			"Hide shadow/shine around boxes"						1
+@var checkbox				other-hideDiscoverNewLists 		"Hide 'Discover new Lists' on lists page"                                       0
+@var checkbox				other-hideScrollbars			"Hide scrollbars"								1
+
+@var text Customize		"━━━━━━⮞【Customize】" '_'
+@var text				customBG				"Custom background (Link to an image on X/Data URL wrapped in single quotes)"	"''"
+@var select				customBGAttachment			"Set background image behavior on scroll" {
+"Fixed*":				"fixed",
+"Scroll":				"scroll",
+"Local":				"local"
+}
+@var select				customBGPosition			"Set background image position" {
+"Center*":				"center",
+"Left":					"left",
+"Top":					"top",
+"Right":				"right",
+"Bottom":				"bottom"
+}
+@var select				customBGRepeat				"Set background image repeating behavior" {
+"No repeat*":				"no-repeat",
+"Repeat":				"repeat",
+"Repeat X":				"repeat-x",
+"Repeat Y":				"repeat-y",
+"Space":				"space",
+"Round":				"round"
+}
+@var select				customBGSize				"Set background image size" {
+"Cover*":				"cover",
+"Contain":				"contain",
+}
+@var range				menuOpacity				"Decrease background brightness"						[0.6, 0, 1, 0.01, '']
+@var select				changeLogo				"Change the logo" {
+"Default*":				"default",
+"Twitter":				"'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2aWV3Qm94PSIwIDAgMjQ4IDIwNCI+DQogIDxwYXRoIGZpbGw9IiMxZDliZjAiIGQ9Ik0yMjEuOTUgNTEuMjljLjE1IDIuMTcuMTUgNC4zNC4xNSA2LjUzIDAgNjYuNzMtNTAuOCAxNDMuNjktMTQzLjY5IDE0My42OXYtLjA0Yy0yNy40NC4wNC01NC4zMS03LjgyLTc3LjQxLTIyLjY0IDMuOTkuNDggOCAuNzIgMTIuMDIuNzMgMjIuNzQuMDIgNDQuODMtNy42MSA2Mi43Mi0yMS42Ni0yMS42MS0uNDEtNDAuNTYtMTQuNS00Ny4xOC0zNS4wNyA3LjU3IDEuNDYgMTUuMzcgMS4xNiAyMi44LS44Ny0yMy41Ni00Ljc2LTQwLjUxLTI1LjQ2LTQwLjUxLTQ5LjV2LS42NGM3LjAyIDMuOTEgMTQuODggNi4wOCAyMi45MiA2LjMyQzExLjU4IDYzLjMxIDQuNzQgMzMuNzkgMTguMTQgMTAuNzFjMjUuNjQgMzEuNTUgNjMuNDcgNTAuNzMgMTA0LjA4IDUyLjc2LTQuMDctMTcuNTQgMS40OS0zNS45MiAxNC42MS00OC4yNSAyMC4zNC0xOS4xMiA1Mi4zMy0xOC4xNCA3MS40NSAyLjE5IDExLjMxLTIuMjMgMjIuMTUtNi4zOCAzMi4wNy0xMi4yNi0zLjc3IDExLjY5LTExLjY2IDIxLjYyLTIyLjIgMjcuOTMgMTAuMDEtMS4xOCAxOS43OS0zLjg2IDI5LTcuOTUtNi43OCAxMC4xNi0xNS4zMiAxOS4wMS0yNS4yIDI2LjE2eiIvPg0KPC9zdmc+'",
+"Custom":				"customLogo"
+}
+@var text				customLogo				"Custom logo (Link to an image on X/Data URL wrapped in single quotes)" 	"''"
+@var range				resizeLogo				"Logo size" [75, 50, 150, 1, "%"]
+==/UserStyle== */
+
+/* ========== REST OF THE CSS REMAINS UNCHANGED ========== */
+@-moz-document url-prefix("https://x.com") {
+	/* Formerly known as Twitter ¯\_(ツ)_/¯ */
+	:root:has(body[style*="rgb(0"]) {
+		--bg: rgba(0, 0, 0, menuOpacity / 2);
+		--bgOpaque: rgb(0, 0, 0);
+		--bgForRGBA: 0, 0, 0;
+	}
+	:root:has(body[style*="rgb(21"]) {
+		--bg: rgba(21, 32, 43, menuOpacity / 2);
+		--bgOpaque: rgb(21, 32, 43);
+		--bgForRGBA: 21, 32, 43;
+	}
+	:root:has(body[style*="rgb(255"]) {
+		--bg: rgba(255, 255, 255, menuOpacity / 2);
+		--bgOpaque: rgb(255, 255, 255);
+		--bgForRGBA: 255, 255, 255;
+	}
+	:root {
+		--br8: 8px;
+		--br16: 16px;
+	}
+	if hideGrok {
+		a[href$="grok"],
+		div[data-testid="GrokDrawer"],
+		button[aria-label*="Grok"],
+		button:has([d^="M12.745 20.54l10"]),
+		button:has(path[d*="21h4.241L6.446"]),
+		[data-testid="tweet"] div:has(> nav),
+		main:has(path[d^="M76.717"]),
+		aside li:has([data-testid="UserAvatar-Container-grok"]),
+		a[href*="/i/imagine"] {
+			display: none;
+		}
+		body:has(main path[d^="M76.717"]) header::after {
+			content: "I thought you didn't want Grok?";
+			position: absolute;
+			top: 50dvh;
+			left: 50dvw;
+			color: white;
+			font-size: 69px;
+			transform: translate(-50%, -50%);
+			width: max-content;
+		}
+	}
+	if hidePremium {
+		[data-testid="UserName"] a[href*="premium_sign_up"] {
+			display: none;
+		}
+	}
+	if hideVerified {
+		div:has(> div > div > a[href="/i/premium_sign_up"]) {
+			display: none;
+		}
+	}
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Timeline */
+	if timeline-header {
+		[data-testid="primaryColumn"]>div>div:first-child {
+			position: unset;
+		}
+	}
+	if timeline-hideAds {
+		[data-testid="cellInnerDiv"]:has(> div > div > [data-testid="placementTracking"]),
+		[data-testid="cellInnerDiv"]:has([data-testid="inlinePrompt"]),
+		[data-testid="verified_profile_visitor_upsell"] {
+			display: none !important;
+		}
+	}
+	if timeline-outerBorders or other-hateBorders {
+		[data-testid="primaryColumn"] {
+			border-color: transparent;
+		}
+	}
+	if timeline-postBorders or other-hateBorders {
+		[data-testid="primaryColumn"] nav,
+		[data-testid="primaryColumn"] div:not([role="link"]):not([data-testid="card.wrapper"]):not(:has(input)),
+		{
+			border-bottom-color: transparent;
+			border-top-color: transparent;
+		}
+		[data-testid="primaryColumn"] [role="separator"],
+		[data-testid="primaryColumn"]>div>div,
+		[data-testid="cellInnerDiv"]>div>div {
+			background-color: transparent;
+		}
+	}
+	if timeline-imgBorders or other-hateBorders {
+		[data-testid="primaryColumn"] div[id^="id__"]>div>div>div>div {
+			border-color: transparent;
+		}
+	}
+	if timeline-quoteBorders or other-hateBorders {
+		[data-testid="tweet"] div[role="link"] {
+			border-color: transparent;
+		}
+	}
+	if timeline-quoteImg {
+		div[data-testid="tweetPhoto"] {
+			border-radius: var(--br16);
+		}
+	}
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Side menu */
+	/* General sidemenu-hover settings are in the ^https:\/\/x.com\/(?!settings).* section below to stop messing up the settings pages */
+	if sidemenu-hideHome {
+		nav a[href$="home"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideExplore {
+		nav a[href$="explore"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideNotifications {
+		nav a[href$="notifications"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideChat {
+		nav a[href$="chat"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideGrok or hideGrok {
+		nav a[href$="grok"] {
+			display: none;
+		}
+	}
+	if sidemenu-hidePremium or hidePremium {
+		nav a[data-testid="premium-hub-tab"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideBookmarks {
+		nav a[href$="bookmarks"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideCreatorStudio {
+		nav a[href$="creators/studio"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideProfile {
+		nav a[data-testid="AppTabBar_Profile_Link"] {
+			display: none;
+		}
+	}
+	if sidemenu-hideMore {
+		nav button[data-testid="AppTabBar_More_Menu"] {
+			display: none;
+		}
+	}
+	if sidemenu-hidePost {
+		header div:has( > a[data-testid="SideNav_NewTweet_Button"]) {
+			display: none;
+		}
+	}
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Sidebar */
+	/* General sidebar-hover settings are in the ^https:\/\/x.com\/(?!settings).* section below to stop messing up the settings pages */
+	if sidebar-hideSearch {
+		[data-testid="sidebarColumn"]:has(section)>div>div>div>div>div>div:nth-child(1) {
+			display: none;
+		}
+	}
+	if sidebar-hidePremium or hidePremium {
+		[data-testid="sidebarColumn"]>div>div>div>div>div>div:has(a[href*="premium_tier_switch"]) {
+			display: none;
+		}
+	}
+	if sidebar-hideFollow {
+		[data-testid="sidebarColumn"]>div>div>div>div>div>div>div:has(a[href*="connect_people"]) {
+			display: none;
+		}
+	}
+	if sidebar-hideTrends {
+		[data-testid="sidebarColumn"]:has(section) div:has( > section) {
+			display: none;
+		}
+	}
+	if sidebar-hideLegalNotice {
+		[data-testid="sidebarColumn"]:has(section) div:has( > nav) {
+			display: none;
+		}
+	}
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Customize */
+	if customBG!='' {
+		html {
+			background-attachment: customBGAttachment;
+			background-image: url(customBG);
+			background-position: customBGPosition;
+			background-repeat: customBGRepeat;
+			background-size: customBGSize;
+		}
+		body {
+			/*Inline change, must be !important */
+			background-color: rgba(0, 0, 0, menuOpacity) !important;
+			outline: solid rgba(0, 0, 0, menuOpacity) 99999vh;
+		}
+		[style$="234);"],
+		[style*="123);"],
+		[style*="165);"] {
+			/* Easy to read white text. Inline change, must be !important */
+			color: white !important;
+		}
+		[data-testid="primaryColumn"] div:not(div:has([role="menuitem"])):not(div[data-testid="scrubber"] div):not([role="listbox"]),
+		[data-testid="sidebarColumn"] div,
+		[data-testid="primaryColumn"],
+		[data-testid="mask"]+[role="dialog"]>div>div>div,
+		button[style*="background-color"][style*="backdrop-filter"],
+		div:has(> div > div > [data-testid="toolBar"]),
+		[data-testid="toolBar"],
+		a[href*="/i/communities/"]:not(:hover) {
+			background-color: transparent;
+		}
+		[data-testid="Dropdown"] {
+			background-color: "rgba(%s, 0.8)" % var(--bgForRGBA);
+		}
+		[data-testid="primaryColumn"]>div>div:first-child>div:first-child {
+			backdrop-filter: unset;
+		}
+		if (!timeline-header) {
+			[data-testid="primaryColumn"]:has([data-testid="cellInnerDiv"])>div>div:first-child {
+				backdrop-filter: blur(10px);
+			}
+		}
+		[data-testid="sidebarColumn"]>div>div>div>[tabindex="0"]>div>div:has(>*):not(:has([data-testid="SearchBox_Search_Input"])):not(:last-child) {
+			/* All cards / sections in the sidebar, expect for dividers and the legal notice*/
+			background-color: var(--bg);
+		}
+		[data-testid="sidebarColumn"] [id^="typeaheadDropdown"] {
+			/* More opaque background for the sidebar search input dropdown menu */
+			background-color: "rgba(%s, 0.8)" % var(--bgForRGBA);
+		}
+		form[role="search"]:not([action="#"])>div>div,
+		[data-testid="dm-search-bar"],
+		div:has(>[data-icon="icon-search-stroke"]),
+		div:has(>div>div>div>div>svg>g>[d^="M10.25 3.75c-3.59 0-6.5 2.91-6.5"]),
+		div:has(>div>div>div>div>div>div>div>textarea) {
+			background-color: var(--bg) !important;
+		}
+		:is([data-testid="tweet"],
+		[data-testid="notification"]):focus {
+			background-color: var(--bg);
+		}
+		#react-root div[role="dialog"]>div,
+		[role="menu"],
+		[data-testid="confirmationSheetDialog"] {
+			background-color: var(--bg);
+		}
+		article[data-testid="tweet"] div[role="group"] {
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+		}
+		[data-testid="cellInnerDiv"]>div,
+		[role="progressbar"]+div>div>div>div>div>div>div>div {
+			border-bottom-color: transparent;
+		}
+		[data-testid="ScrollSnap-prevButtonWrapper"]+[data-testid="ScrollSnap-SwipeableList"] {
+			border-bottom-left-radius: var(--br8);
+			border-bottom-right-radius: var(--br8);
+		}
+		[data-testid="tweet"],
+		[data-testid="notification"],
+		[data-testid="cellInnerDiv"]>div>button {
+			border-radius: var(--br8);
+		}
+		[data-testid="tweetPhoto"]>div>div {
+			border-top-right-radius: var(--br16);
+			border-top-left-radius: var(--br16);
+		}
+		[data-testid="GrokDrawer"]>div,
+		[role="dialog"] {
+			background-color: var(--bgOpaque);
+		}
+	}
+	if changeLogo!=default {
+		header h1[role="heading"] {
+			&>a {
+				background-image: url(changeLogo);
+				background-size: resizeLogo;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			&>a>div {
+				display: none;
+			}
+		}
+	}
+	/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⮞ Others */
+	if other-hoverMessages {
+		[data-testid="chat-drawer-root"] {
+			width: 350px !important;
+			box-sizing: content-box;
+			margin-right: 0;
+			opacity: 0;
+			padding-left: 64px;
+			padding-right: 20px;
+			pointer-events: all !important;
+			transform: translateX(370px);
+			transition: all 300ms ease-in-out;
+		}
+		[data-testid="chat-drawer-root"]:is(:hover, :focus-within) {
+			opacity: 1;
+            
+            
