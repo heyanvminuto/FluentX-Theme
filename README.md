@@ -195,33 +195,43 @@ permission, permissions beyond the Additional Use Grant, correspondence
 regarding license compliance, and all other official communications:
 
   PRIMARY CORRESPONDENCE CHANNELS:
+**1. TELECOMMUNICATIONS — VOICE, SMS, RCS AND WHATSAPP**
 
-    1. TELECOMMUNICATIONS — VOICE, SMS, RCS AND WHATSAPP
-       Number:      +39 379 225 0408
-       Services:    Voice calls, Short Message Service (SMS),
-                    Rich Communication Services (RCS),
-                    WhatsApp text and multimedia messaging
-       WhatsApp:    [https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v](https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v)
-       Availability: Standard Central European Time (CET/CEST) business hours
+- Number: +39 379 225 0408
+- Services: Voice calls, Short Message Service (SMS), Rich Communication Services (RCS), WhatsApp text and multimedia messaging
+- WhatsApp: [https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v](https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v)
+- Availability: Standard Central European Time (CET/CEST) business hours
 
-    2. TELEGRAM INSTANT MESSAGING
-       Username:    @heyanvminuto
-       URL:         [https://t.me/heyanvminuto](https://t.me/heyanvminuto)
-       Protocol:    Telegram Messenger Platform
+---
 
-    3. ELECTRONIC MAIL — PRIMARY
-       Address:     [heyanvnm@outlook.com](mailto:heyanvnm@outlook.com)
-       Protocol:    SMTP / MIME
-       Encryption:  TLS recommended for all transmissions
+**2. TELEGRAM INSTANT MESSAGING**
 
-    4. ELECTRONIC MAIL — SECONDARY
-       Address:     [vieiraminutoheyan@gmail.com](mailto:vieiraminutoheyan@gmail.com)
-       Protocol:    SMTP / MIME
-       Encryption:  TLS recommended for all transmissions
+- Username: @heyanvminuto
+- URL: [https://t.me/heyanvminuto](https://t.me/heyanvminuto)
+- Protocol: Telegram Messenger Platform
 
-    5. X (FORMERLY TWITTER) — DIRECT MESSAGING
-       Handle:      @heyanvminuto
-       Platform:     X Corp. Direct Messaging System
+---
+
+**3. ELECTRONIC MAIL — PRIMARY**
+
+- Address: [heyanvnm@outlook.com](mailto:heyanvnm@outlook.com)
+- Protocol: SMTP / MIME
+- Encryption: TLS recommended for all transmissions
+
+---
+
+**4. ELECTRONIC MAIL — SECONDARY**
+
+- Address: [vieiraminutoheyan@gmail.com](mailto:vieiraminutoheyan@gmail.com)
+- Protocol: SMTP / MIME
+- Encryption: TLS recommended for all transmissions
+
+---
+
+**5. X (FORMERLY TWITTER) — DIRECT MESSAGING**
+
+- Handle: @heyanvminuto
+- Platform: X Corp. Direct Messaging System
 
   CORRESPONDENCE GUIDELINES:
     • All written requests for commercial use or derivative distribution
