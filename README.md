@@ -16,7 +16,7 @@
 3. [INSTALLATION PROCEDURE](#3-installation-procedure)
 4. [MANIFEST V3 BROWSERS — PERMISSION CONFIGURATION](#4-manifest-v3-browsers--permission-configuration)
 5. [DEFAULT SPECIFICATIONS](#5-default-specifications)
-6. [LICENSE AND USAGE TERMS](#6-license-and-usage-terms)
+6. [LICENSE DOCUMENT — FULL TEXT](#6-license-document---full-text)
 7. [ACKNOWLEDGMENTS AND THIRD-PARTY NOTICES](#7-acknowledgments-and-third-party-notices)
 
 ---
@@ -78,7 +78,7 @@ This section applies exclusively to browsers implementing the **Web Extension Ma
 ### 4.2 Requirement
 Fluent X Design may require the **"Patch CSP"** functionality to be enabled within Stylus. This capability requires the `webRequestBlocking` permission, which is subject to additional authorization procedures under Manifest V3 constraints.
 
-> ⚠️ **Notice:** The following methods require elevated browser configuration privileges. Proceed only with appropriate authorization and an understanding of browser security implications.
+>  **Notice:** The following methods require elevated browser configuration privileges. Proceed only with appropriate authorization and an understanding of browser security implications.
 
 ---
 
@@ -177,11 +177,6 @@ All parameters may be modified within the Stylus configuration panel following i
 
 ## 6. LICENSE DOCUMENT — FULL TEXT
 
-
-================================================================================
-                              DOCUMENT OVERVIEW
-================================================================================
-
 Document Identifier:  LICENSE-FXD-2026-11-11-v1.0
 Work Designation:     Fluent X Design
 License Classification: Business Source License 1.1
@@ -193,9 +188,6 @@ Governing Law:        Italian Law; International Copyright Conventions
                       EU Directive 2001/29/EC;
                       EU Directive 2019/790/EU
 
-================================================================================
-                           CONTACT INFORMATION
-================================================================================
 
 For all matters pertaining to this Work, including but not limited to:
 licensing inquiries, commercial usage authorization, derivative distribution
@@ -209,21 +201,21 @@ regarding license compliance, and all other official communications:
        Services:    Voice calls, Short Message Service (SMS),
                     Rich Communication Services (RCS),
                     WhatsApp text and multimedia messaging
-       WhatsApp:    https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v
+       WhatsApp:    [https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v](https://wa.me/qr/CZ4ZK7CMFZRQB1?s=v)
        Availability: Standard Central European Time (CET/CEST) business hours
 
     2. TELEGRAM INSTANT MESSAGING
        Username:    @heyanvminuto
-       URL:         https://t.me/heyanvminuto
+       URL:         [https://t.me/heyanvminuto](https://t.me/heyanvminuto)
        Protocol:    Telegram Messenger Platform
 
     3. ELECTRONIC MAIL — PRIMARY
-       Address:     heyanvnm@outlook.com
+       Address:     [heyanvnm@outlook.com](mailto:heyanvnm@outlook.com)
        Protocol:    SMTP / MIME
        Encryption:  TLS recommended for all transmissions
 
     4. ELECTRONIC MAIL — SECONDARY
-       Address:     vieiraminutoheyan@gmail.com
+       Address:     [vieiraminutoheyan@gmail.com](mailto:vieiraminutoheyan@gmail.com)
        Protocol:    SMTP / MIME
        Encryption:  TLS recommended for all transmissions
 
@@ -242,12 +234,12 @@ regarding license compliance, and all other official communications:
       days; substantive responses provided within 30 calendar days where
       reasonably possible.
 
-================================================================================
-                    BUSINESS SOURCE LICENSE VERSION 1.1
-                    Official License Text — Reference Copy
-                    Source: https://mariadb.com/bsl11/
-                    Copyright © 2023 MariaDB plc
-================================================================================
+
+    BUSINESS SOURCE LICENSE VERSION 1.1
+    Official License Text — Reference Copy
+    Source: https://mariadb.com/bsl11/
+    Copyright © 2023 MariaDB plc
+
 
 DEFINITIONS
 
@@ -476,9 +468,9 @@ LICENSE TERMS AND CONDITIONS
   only and shall not be used to construe the intent of
   any provision.
 
-================================================================================
-                     THIRD-PARTY COMPONENT NOTICES
-================================================================================
+
+                     **THIRD-PARTY COMPONENT NOTICES**
+
 
 This Work incorporates components from external projects, each of which is
 owned by their respective authors and made available under their original
@@ -488,12 +480,12 @@ License 1.1 restrictions set forth above. Your use of these components
 is governed exclusively by their respective license terms reproduced below.
 
 ------------------------------------------------------------------------------
-COMPONENT 1: Xcellent
-------------------------------------------------------------------------------
+COMPONENT 1 :**Xcellent**
+
 
   Original Work:   Xcellent
   Author:          Himither
-  Repository:      https://github.com/Himither/Xcellent
+  Repository:      [https://github.com/Himither/Xcellent](https://github.com/Himither/Xcellent)
   License:         MIT License
   Date Acquired:   2026-11-11
 
@@ -576,9 +568,9 @@ SEVERABILITY AND INTERPRETATION
   IN WITNESS WHEREOF, the Licensor has caused this License document to be
   prepared and published as of the Effective Date first written above.
 
-  ================================================================================
-                             END OF LICENSE & DISCLAIMER
-  ================================================================================
+  
+                             **END OF LICENSE & DISCLAIMER**
+
 
 ---
 
