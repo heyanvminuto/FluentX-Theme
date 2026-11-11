@@ -16,7 +16,7 @@
 3. [INSTALLATION PROCEDURE](#3-installation-procedure)
 4. [MANIFEST V3 BROWSERS — PERMISSION CONFIGURATION](#4-manifest-v3-browsers--permission-configuration)
 5. [DEFAULT SPECIFICATIONS](#5-default-specifications)
-6. [LICENSE DOCUMENT — FULL TEXT](#6-license-document---full-text)
+6. [LICENSE DOCUMENT — FULL TEXT](https://github.com/heyanvminuto/FluentX-Theme/blob/main/README.md#6-license-document--full-text)
 7. [ACKNOWLEDGMENTS AND THIRD-PARTY NOTICES](#7-acknowledgments-and-third-party-notices)
 
 ---
