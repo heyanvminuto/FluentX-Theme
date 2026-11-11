@@ -1,6 +1,9 @@
 # Fluent X Design
 ## Windows 11 Fluent/Mica Design Implementation for X (formerly Twitter)
 
+## Download Part 1 at: https://userstyles.world/style/31428/fluent-x-design
+## Download Part 2 at: https://userstyles.world/style/31429/fluentx-design-part-2-requires-fluentx-design
+
 **Document Version:** 1.0.0
 **Release Status:** Final Release — Authoritative Version
 **Effective Date:** 11 November 2026
